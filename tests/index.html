@@ -62,6 +62,14 @@
 
     map.on('click', onMapClick);
 
+
+    //gives bounds after each change of the map
+    //todo: send to java and get places as answer
+    map.on('moveend', function () {
+        console.log(map.getBounds())
+    })
+
+
     let dataSample = [
         {
             lat: 45.75702922677463,
